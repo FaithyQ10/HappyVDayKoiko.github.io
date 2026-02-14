@@ -31,6 +31,11 @@ animation: pulse 1.5s infinite;
 cursor: pointer;
 }
 
+#envelope-container{
+    flex-direction: column;
+    gap: 10px;
+}
+
 #window-container{
     display: none;
     position: fixed;
@@ -173,3 +178,18 @@ display: inline-block;
 .love-btn:hover{
     transform:scale(1.1);
 }
+
+#envelope-container,
+#window-container,
+#letter-container{
+    position:fixed;
+    inset:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+#window-container { display:none; }
+#letter-container { display:none; }
+
+
